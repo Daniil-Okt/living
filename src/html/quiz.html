@@ -1,0 +1,222 @@
+<div class="quiz">
+    <div class="quiz__container">
+        <div class="quiz__content">
+            <h2 class="quiz__title">
+                Рассчитайте стоимость 
+                <br/>вашего будущего дома 
+                <br/>за 3 минуты
+            </h2>
+        </div>  
+        <div class="quiz__body">
+            <div class="quiz__head">
+                Ответьте на 7 простых вопросов
+            </div>
+            <form action="#" class="quiz__form" id="quiz-form">
+                <div class="quiz__slider">
+                    <div class="quiz__wrapper swiper-wrapper">
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <h3 class="slide-quiz__title">
+                                Выберите желаемую площадь дома
+                            </h3>
+                            <div class="slide-quiz__row">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked id="square1" name="square" value="До 50 м2" class="slide-quiz__input-radio">
+                                    <label for="square1" class="slide-quiz__label-radio">
+                                        До 50 м2
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="square2" value="50 - 100 м2" name="square" class="slide-quiz__input-radio">
+                                    <label for="square2" class="slide-quiz__label-radio">
+                                        50 - 100 м2
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="square3" value="100 - 120 м2" name="square" class="slide-quiz__input-radio">
+                                    <label for="square3" class="slide-quiz__label-radio">
+                                        100 - 120 м2
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="square4" value="120 - 160 м2" name="square" class="slide-quiz__input-radio">
+                                    <label for="square4" class="slide-quiz__label-radio">
+                                        120 - 160 м2
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <h3 class="slide-quiz__title">
+                                Формат дома
+                            </h3>
+                            <div class="slide-quiz__row line">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked id="format1" value="1 этаж" name="format" class="slide-quiz__input-radio">
+                                    <label for="format1" class="slide-quiz__label-radio">
+                                        1 этаж
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="1 этаж + антресоль" id="format2" name="format" class="slide-quiz__input-radio">
+                                    <label for="format2" class="slide-quiz__label-radio">
+                                        1 этаж + антресоль
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="format3" value="2 этажа" name="format" class="slide-quiz__input-radio">
+                                    <label for="format3" class="slide-quiz__label-radio">
+                                        2 этажа
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <h3 class="slide-quiz__title">
+                                У вас уже есть земельный участок?
+                            </h3>
+                            <div class="slide-quiz__row line">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked id="region1" value="Есть участок" name="region" class="slide-quiz__input-radio">
+                                    <label for="region1" class="slide-quiz__label-radio">
+                                        Есть участок
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="region2" value="Участка нет, нужна помощь с подбором" name="region" class="slide-quiz__input-radio">
+                                    <label for="region2" class="slide-quiz__label-radio">
+                                        Участка нет, нужна помощь с подбором
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <h3 class="slide-quiz__title">
+                                В какую сумму планируете уложиться?
+                            </h3>
+                            <div class="slide-quiz__row">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked value="Хочу в ипотеку" id="amount1" name="amount" class="slide-quiz__input-radio">
+                                    <label for="amount1" class="slide-quiz__label-radio">
+                                        Хочу в ипотеку
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="От 2 до 3.5 млн ₽" id="amount2" name="amount" class="slide-quiz__input-radio">
+                                    <label for="amount2" class="slide-quiz__label-radio">
+                                        От 2 до 3.5 млн ₽
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="От 3.5 до 6 млн ₽" id="amount3" name="amount" class="slide-quiz__input-radio">
+                                    <label for="amount3" class="slide-quiz__label-radio">
+                                        От 3.5 до 6 млн ₽
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="От 6 млн ₽ и выше" id="amount4" name="amount" class="slide-quiz__input-radio">
+                                    <label for="amount4" class="slide-quiz__label-radio">
+                                        От 6 млн ₽ и выше
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <h3 class="slide-quiz__title">
+                                Какие коммуникации планируете сделать сразу?
+                            </h3>
+                            <div class="slide-quiz__row line">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked value="Водоразводка" id="switching1" name="switching" class="slide-quiz__input-radio">
+                                    <label for="switching1" class="slide-quiz__label-radio">
+                                        Водоразводка
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Электрика" id="switching2" name="switching" class="slide-quiz__input-radio">
+                                    <label for="switching2" class="slide-quiz__label-radio">
+                                        Электрика
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Водоснабжение" id="switching3" name="switching" class="slide-quiz__input-radio">
+                                    <label for="switching3" class="slide-quiz__label-radio">
+                                        Водоснабжение
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Септик" id="switching4" name="switching" class="slide-quiz__input-radio">
+                                    <label for="switching4" class="slide-quiz__label-radio">
+                                        Септик
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <h3 class="slide-quiz__title">
+                                Когда планируете приступить к строительству?
+                            </h3>
+                            <div class="slide-quiz__row">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked value="Как можно скорее" id="planning1" name="planning" class="slide-quiz__input-radio">
+                                    <label for="planning1" class="slide-quiz__label-radio">
+                                        Как можно скорее
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Ближайший месяц" id="planning2" name="planning" class="slide-quiz__input-radio">
+                                    <label for="planning2" class="slide-quiz__label-radio">
+                                        Ближайший месяц
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Ближайшие 2-3 месяца" id="planning3" name="planning" class="slide-quiz__input-radio">
+                                    <label for="planning3" class="slide-quiz__label-radio">
+                                        Ближайшие 2-3 месяца
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Ближайшие 6 месяцев" id="planning4" name="planning" class="slide-quiz__input-radio">
+                                    <label for="planning4" class="slide-quiz__label-radio">
+                                        Ближайшие 6 месяцев
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__slide slide-quiz swiper-slide">
+                            <div class="slide-quiz__end">
+                                <div class="slide-quiz__item">
+                                    <input type="text" id="teltel" placeholder="Номер телефона" name="" class="slide-quiz__input text _req tel">
+                                </div>
+                                <button class="slide-quiz__button button">
+                                    Рассчитать стоимость
+                                </button>
+                            </div>
+                            <p class="personal-data-text">
+                                Отправляя номер телефона, вы соглашаетесь на <a href="#">обработку персональных данных</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quiz__bottom">
+                        <div class="quiz__pagin-row">
+                            <p class="quiz__pagin-text">
+                                Вопрос: <span>1</span> из 7
+                            </p>
+                            <div class="quiz__pagination swiper-pagination">
+    
+                            </div>
+                        </div>
+                        <div class="quiz__button-row">
+                            <div class="quiz__button-prev button gray">
+                                Назад
+                            </div>
+                            <div class="quiz__button-next button">
+                                Продолжить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
