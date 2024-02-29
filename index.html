@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240229195422">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240229215406">
   <title>Главная</title>
 </head>
 
@@ -81,19 +81,19 @@
             </div>
             <div class="about__slider slider-about">
                 <div class="swiper-wrapper slider-about__wrapper">
-                    <div class="swiper-slide slider-about__slide">
+                    <div class="swiper-slide slider-about__slide" data-slide="5">
                         <picture><source srcset="images/slider-about.webp" type="image/webp"><img src="images/slider-about.png" alt=""></picture>
                     </div>
-                    <div class="swiper-slide slider-about__slide">
+                    <div class="swiper-slide slider-about__slide" data-slide="6">
                         <picture><source srcset="images/slider-about2.webp" type="image/webp"><img src="images/slider-about2.png" alt=""></picture>
                     </div>
-                    <div class="swiper-slide slider-about__slide">
+                    <div class="swiper-slide slider-about__slide" data-slide="7">
                         <picture><source srcset="images/slider-about3.webp" type="image/webp"><img src="images/slider-about3.png" alt=""></picture>
                     </div>
-                    <div class="swiper-slide slider-about__slide">
+                    <div class="swiper-slide slider-about__slide" data-slide="8">
                         <picture><source srcset="images/slider-about4.webp" type="image/webp"><img src="images/slider-about4.png" alt=""></picture>
                     </div>
-                    <div class="swiper-slide slider-about__slide">
+                    <div class="swiper-slide slider-about__slide" data-slide="9">
                         <picture><source srcset="images/slider-about5.webp" type="image/webp"><img src="images/slider-about5.png" alt=""></picture>
                     </div>
                 </div>
@@ -469,7 +469,7 @@
                         <div class="swiper-slide quiz__slide slide-quiz">
                             <div class="slide-quiz__end">
                                 <div class="slide-quiz__item">
-                                    <input type="text" id="tel" placeholder="Номер телефона" name="" class="_req text tel slide-quiz__input">
+                                    <input type="text" placeholder="Номер телефона" name="tel" class="_req text tel slide-quiz__input">
                                 </div>
                                 <button class="button slide-quiz__button">
                                     Рассчитать стоимость
@@ -588,10 +588,10 @@
                 </h3>
                 <div class="consultation__row">
                     <div class="consultation__item">
-                        <input type="text" id="name" name="name" placeholder="Имя" class="_req text consultation__input">
+                        <input type="text" name="name" placeholder="Имя" class="_req text consultation__input">
                     </div>
                     <div class="consultation__item">
-                        <input type="text" id="tel2" name="tel" placeholder="Номер телефона" class="_req text tel consultation__input">
+                        <input type="text" name="tel" placeholder="Номер телефона" class="_req text tel consultation__input">
                     </div>
                 </div>
                 <button class="button consultation__button">
@@ -1303,7 +1303,6 @@
     </div>
 </div>
 
-
 <div class="popup popup-form" data-popup="popup-form" data-close-overlay>
     <div class="popup__wrapper popup-form__wrapper" data-close-overlay>
         <div class="popup__content popup-form__content">
@@ -1353,7 +1352,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="popup popup-works" data-popup="popup-works" data-close-overlay>
     <div class="popup__wrapper popup-works__wrapper" data-close-overlay>
@@ -1408,7 +1406,26 @@
         </div>
     </div>
 </div>
+
+<div class="popup popup-tranks" data-popup="popup-tranks" data-close-overlay>
+    <div class="popup__wrapper popup-tranks__wrapper" data-close-overlay>
+        <div class="popup__content popup-tranks__content">
+            <div class="button-close popup__button-close">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" fill="#F4F2EF"/>
+                </svg>
+            </div>
+            <h2 class="title-section">
+                Спасибо за заявку!
+            </h2>
+            <p>
+                Наши специалисты свяжутся с вами 
+                <br>в ближайшее время!
+            </p>
+        </div>
     </div>
-    <script src="js/app.min.js?_v=20240229195422"></script>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20240229215406"></script>
   </body>
 </html>
