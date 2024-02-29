@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240229160702">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240229170629">
   <title>Главная</title>
 </head>
 
@@ -40,7 +40,7 @@
           <img src="images/what-icon.svg" alt="">
         </a>
       </div>
-      <div class="button header__button" data-da=".header__menu, 590, last">
+      <div class="button header__button" data-da=".header__menu, 590, last" data-type="popup-form">
         Заказать звонок
       </div>
       <button class="your-menu header__burger icon-menu">
@@ -74,7 +74,7 @@
                     <a href="#quiz" class="button about__button dark-orange">
                         Рассчитать стоимость
                     </a>
-                    <div class="button about__button gray">
+                    <div class="button about__button gray" data-type="popup-works">
                         Посмотреть проекты
                     </div>
                 </div>
@@ -270,6 +270,7 @@
                     <picture><source srcset="images/works-item5.webp" type="image/webp"><img src="images/works-item5.png" alt=""></picture>
                 </div>
                 <div class="works__item works__item-button">
+                    <div class="hidden-button" data-type="popup-works"></div>
                     <picture><source srcset="images/services-item-img.webp" type="image/webp"><img src="images/services-item-img.png" alt=""></picture>
                     <p>
                         Смотреть все
@@ -1302,7 +1303,140 @@
     </div>
 </div>
 
+
+<div class="popup popup-form" data-popup="popup-form" data-close-overlay>
+    <div class="popup__wrapper popup-form__wrapper" data-close-overlay>
+        <div class="popup__content popup-form__content">
+            
+            <div class="consultation">
+                
+                <div class="consultation__container">
+                    <div class="consultation__content">
+                        <div class="button-close popup__button-close">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" fill="#F4F2EF"/>
+                            </svg>
+                        </div>
+                        <div class="consultation__body">
+                            <h2 class="consultation__title">
+                                Оставьте заявку 
+                                <br>на бесплатную консультацию
+                            </h2>
+                            <p class="consultation__text">
+                                Мы позвоним в ближайшее время, подберем выгодные условия, и ответим на все вопросы
+                            </p>
+                            <div class="consultation__logo">
+                                <picture><source srcset="images/consultation-logo.webp" type="image/webp"><img src="images/consultation-logo.png" alt=""></picture>
+                            </div>
+                        </div>
+                        <form action="#" class="consultation__form">
+                            <h3 class="consultation__title-form">
+                                Заполните форму
+                            </h3>
+                            <div class="consultation__row">
+                                <div class="consultation__item">
+                                    <input type="text" name="name" placeholder="Имя" class="_req text consultation__input">
+                                </div>
+                                <div class="consultation__item">
+                                    <input type="text" name="tel" placeholder="Номер телефона" class="_req text tel consultation__input">
+                                </div>
+                            </div>
+                            <button class="button consultation__button">
+                                Оставить заявку
+                            </button>
+                            <p class="personal-data-text consultation__data-text">
+                                Отправляя номер телефона, вы соглашаетесь на <a href="#">обработку персональных данных</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="js/app.min.js?_v=20240229160702"></script>
+</div>
+
+
+<div class="popup popup-works" data-popup="popup-works" data-close-overlay>
+    <div class="popup__wrapper popup-works__wrapper" data-close-overlay>
+        <div class="popup__content popup-works__content">
+            <div class="button-close popup__button-close">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" fill="#F4F2EF"/>
+                </svg>
+            </div>
+            <div class="popup-works__slider">
+                <div class="swiper-wrapper popup-works__row">
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/works-item1.webp" type="image/webp"><img src="images/works-item1.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/works-item2.webp" type="image/webp"><img src="images/works-item2.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/works-item3.webp" type="image/webp"><img src="images/works-item3.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/works-item4.webp" type="image/webp"><img src="images/works-item4.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/works-item5.webp" type="image/webp"><img src="images/works-item5.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/slider-about.webp" type="image/webp"><img src="images/slider-about.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/slider-about2.webp" type="image/webp"><img src="images/slider-about2.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/slider-about3.webp" type="image/webp"><img src="images/slider-about3.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/slider-about4.webp" type="image/webp"><img src="images/slider-about4.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-works__slide">
+                        <picture><source srcset="images/slider-about5.webp" type="image/webp"><img src="images/slider-about5.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="swiper-pagination popup-works__pagination"></div>
+            </div>
+            <div class="popup-works__pagination popup-pagintion">
+                <div class="swiper-wrapper popup-pagintion__row">
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/works-item1.webp" type="image/webp"><img src="images/works-item1.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/works-item2.webp" type="image/webp"><img src="images/works-item2.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/works-item3.webp" type="image/webp"><img src="images/works-item3.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/works-item4.webp" type="image/webp"><img src="images/works-item4.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/works-item5.webp" type="image/webp"><img src="images/works-item5.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/slider-about.webp" type="image/webp"><img src="images/slider-about.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/slider-about2.webp" type="image/webp"><img src="images/slider-about2.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/slider-about3.webp" type="image/webp"><img src="images/slider-about3.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/slider-about4.webp" type="image/webp"><img src="images/slider-about4.png" alt=""></picture>
+                    </div>
+                    <div class="swiper-slide popup-pagintion__slide">
+                        <picture><source srcset="images/slider-about5.webp" type="image/webp"><img src="images/slider-about5.png" alt=""></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20240229170629"></script>
   </body>
 </html>
