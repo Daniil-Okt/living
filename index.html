@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240229215406">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240301091129">
   <title>Главная</title>
 </head>
 
@@ -251,6 +251,7 @@
         </h2>
         <div class="works__content">
             <div class="works__video">
+                <div class="hidden-button" data-type="popup-video"></div>
                 <picture><source srcset="images/works-video.webp" type="image/webp"><img src="images/works-video.png" alt=""></picture>
             </div>
             <div class="works__row">
@@ -1251,7 +1252,7 @@
                 </svg>
             </div>
             <div class="popup__head">
-                <picture><source srcset="images/popup-fon7.webp" type="image/webp"><img src="images/popup-fon7.png" alt="" class="popup__fon"></picture>
+                <picture><source srcset="images/popup-fon8.webp" type="image/webp"><img src="images/popup-fon8.png" alt="" class="popup__fon"></picture>
                 <h2 class="title-section">
                     Плитка и монолит
                 </h2>
@@ -1259,26 +1260,38 @@
             <div class="popup__body">
                 <div class="popup__item">
                     <p>
-                        Покрытие стен, полов и потолков лакокрасочными смесями как внутри, так и снаружи дома, является весьма востребованным методом декоративной отделки. Кроме того, покрытие краской эффективно защищает поверхности от воздействия внешних факторов. Наши опытные маляры гарантируют качественное окрашивание внутренних стен помещений и проведение внешних малярных работ.
+                        Мы специализируемся на высококачественных работах с плиткой и монолитом, предоставляя широкий спектр услуг для жилых и коммерческих объектов. Наши опытные специалисты гарантируют профессиональное выполнение работ, создавая надежные и эстетичные поверхности.
                     </p>
+                </div>
+                <div class="popup__item">
                     <p>
-                        Предоставление данной услуги начинается с проведения замеров помещения, оценки состояния поверхности и составления сметы. Каждый этап согласовывается с заказчиком. Работы по малярному строительству и ремонту включают в себя:
+                        Услуги в области работ с плиткой включают:
                     </p>
                     <ul>
                         <li>
-                            демонтаж старого покрытия (обоев, лакокрасочных и прочих материалов);
+                            Монтаж плиточных поверхностей: Опытные мастера проводят монтаж кафельных покрытий для стен, полов и других поверхностей с использованием различных видов плитки и эффективных методов.
                         </li>
                         <li>
-                            выравнивание поверхности с использованием специализированных декоративных выравнивающих смесей для улучшения срока службы покрытия и повышения эстетических и гигиенических характеристик;
+                            Реставрация и замена плитки: Предоставляем услуги по реставрации поврежденной плитки, а также замене плиточных элементов, обеспечивая долговечность и безупречный внешний вид.
                         </li>
                         <li>
-                            грунтование, шлифовка, нанесение финишной шпаклевки;
+                            Укладка мозаичных и декоративных элементов: Мы создаем уникальные дизайнерские решения, включая укладку мозаичных и декоративных элементов для придания вашему интерьеру индивидуальности.
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup__item">
+                    <p>
+                        Услуги по работам с монолитом включают:
+                    </p>
+                    <ul>
+                        <li>
+                            Строительство монолитных конструкций: Наши строители осуществляют возведение монолитных стен, перекрытий и фундаментов, гарантируя прочность и долговечность.
                         </li>
                         <li>
-                            облицовка стеновых панелей обоями;
+                            Отделка монолитных поверхностей: Предоставляем услуги по отделке монолитных стен и потолков, включая шпаклевку, покраску и другие отделочные работы.
                         </li>
                         <li>
-                            окраска внутренних и внешних стен, потолков и полов.
+                            Работы по монолиту: Восстанавливаем и укрепляем конструкции для обеспечения их надежности.
                         </li>
                     </ul>
                 </div>
@@ -1425,7 +1438,25 @@
         </div>
     </div>
 </div>
+
+
+
+
+<div class="popup is-open popup-video" data-popup="popup-video" data-close-overlay>
+    <div class="popup__wrapper popup-video__wrapper" data-close-overlay>
+        <div class="popup__content popup-video__content">
+            <div class="button-close popup__button-close">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" fill="#F4F2EF"/>
+                </svg>
+            </div>
+            <video id="popup-video" width="100%" height="auto" preload="metadata" controls playsinline loop>
+                <source src="static/video/popup-video.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-    <script src="js/app.min.js?_v=20240229215406"></script>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20240301091129"></script>
   </body>
 </html>
