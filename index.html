@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240301092603">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240301095708">
   <title>Главная</title>
 </head>
 
@@ -253,6 +253,9 @@
             <div class="works__video">
                 <div class="hidden-button" data-type="popup-video"></div>
                 <picture><source srcset="images/works-video.webp" type="image/webp"><img src="images/works-video.png" alt=""></picture>
+                <video id="works-video" width="100%" height="100%" preload="metadata" muted playsinline loop>
+                    <source src="static/video/popup-video.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="works__row">
                 <div class="works__item" data-slide="0">
@@ -1457,6 +1460,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240301092603"></script>
+    <script src="js/app.min.js?_v=20240301095708"></script>
   </body>
 </html>
