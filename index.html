@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240306114604">
-  <title>Главная</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20240307100912">
+  <title>Green Living</title>
+  <meta name="yandex-verification" content="8572d650f2c4e0fa">
+  <meta name="google-site-verification" content="CCfvxNSpWGA0W-xykNXvhy2P3hgS8XDLtzbVToKzpMk">
 </head>
 
   <body>
@@ -344,13 +346,7 @@
                             </h3>
                             <div class="slide-quiz__row">
                                 <div class="slide-quiz__item-radio">
-                                    <input type="radio" checked="checked" id="square1" name="square" value="До 50 м2" class="slide-quiz__input-radio">
-                                    <label for="square1" class="slide-quiz__label-radio">
-                                        До 50 м2
-                                    </label>
-                                </div>
-                                <div class="slide-quiz__item-radio">
-                                    <input type="radio" id="square2" value="50 - 100 м2" name="square" class="slide-quiz__input-radio">
+                                    <input type="radio" checked="checked" id="square2" value="50 - 100 м2" name="square" class="slide-quiz__input-radio">
                                     <label for="square2" class="slide-quiz__label-radio">
                                         50 - 100 м2
                                     </label>
@@ -367,13 +363,19 @@
                                         120 - 160 м2
                                     </label>
                                 </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="square1" name="square" value="До 50 м2" class="slide-quiz__input-radio">
+                                    <label for="square1" class="slide-quiz__label-radio">
+                                        Более 160 м2
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide quiz__slide slide-quiz">
                             <h3 class="slide-quiz__title">
                                 Формат дома
                             </h3>
-                            <div class="slide-quiz__row line">
+                            <div class="slide-quiz__row">
                                 <div class="slide-quiz__item-radio">
                                     <input type="radio" checked="checked" id="format1" value="1 этаж" name="format" class="slide-quiz__input-radio">
                                     <label for="format1" class="slide-quiz__label-radio">
@@ -390,6 +392,12 @@
                                     <input type="radio" id="format3" value="2 этажа" name="format" class="slide-quiz__input-radio">
                                     <label for="format3" class="slide-quiz__label-radio">
                                         2 этажа
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" id="format4" value="2 этажа" name="format" class="slide-quiz__input-radio">
+                                    <label for="format4" class="slide-quiz__label-radio">
+                                        Более 2 этажей
                                     </label>
                                 </div>
                             </div>
@@ -419,13 +427,7 @@
                             </h3>
                             <div class="slide-quiz__row">
                                 <div class="slide-quiz__item-radio">
-                                    <input type="radio" checked="checked" value="Хочу в ипотеку" id="amount1" name="amount" class="slide-quiz__input-radio">
-                                    <label for="amount1" class="slide-quiz__label-radio">
-                                        Хочу в ипотеку
-                                    </label>
-                                </div>
-                                <div class="slide-quiz__item-radio">
-                                    <input type="radio" value="От 2 до 3.5 млн ₽" id="amount2" name="amount" class="slide-quiz__input-radio">
+                                    <input type="radio" checked="checked" value="От 2 до 3.5 млн ₽" id="amount2" name="amount" class="slide-quiz__input-radio">
                                     <label for="amount2" class="slide-quiz__label-radio">
                                         От 2 до 3.5 млн ₽
                                     </label>
@@ -446,31 +448,117 @@
                         </div>
                         <div class="swiper-slide quiz__slide slide-quiz">
                             <h3 class="slide-quiz__title">
-                                Какие коммуникации планируете сделать сразу?
+                                Какие виды работы планируете сделать?
                             </h3>
-                            <div class="slide-quiz__row line">
-                                <div class="slide-quiz__item-radio">
-                                    <input type="radio" checked="checked" value="Водоразводка" id="switching1" name="switching" class="slide-quiz__input-radio">
-                                    <label for="switching1" class="slide-quiz__label-radio">
-                                        Водоразводка
+                            <div class="slide-quiz__row three">
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" checked="checked" value="Теплый контур" id="switching1" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching1" class="slide-quiz__label-checkbox">
+                                        Теплый контур
                                     </label>
                                 </div>
-                                <div class="slide-quiz__item-radio">
-                                    <input type="radio" value="Электрика" id="switching2" name="switching" class="slide-quiz__input-radio">
-                                    <label for="switching2" class="slide-quiz__label-radio">
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Черновая отделка" id="switching2" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching2" class="slide-quiz__label-checkbox">
+                                        Черновая отделка
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Чистовая отделка" id="switching3" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching3" class="slide-quiz__label-checkbox">
+                                        Чистовая отделка
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Сантехника" id="switching4" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching4" class="slide-quiz__label-checkbox">
+                                        Сантехника
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Электрика" id="switching5" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching5" class="slide-quiz__label-checkbox">
                                         Электрика
                                     </label>
                                 </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Кондиционеры" id="switching6" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching6" class="slide-quiz__label-checkbox">
+                                        Кондиционеры
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Фасад" id="switching7" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching7" class="slide-quiz__label-checkbox">
+                                        Фасад
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Кровля" id="switching8" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching8" class="slide-quiz__label-checkbox">
+                                        Кровля
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-checkbox">
+                                    <input type="checkbox" value="Забор" id="switching9" name="switching" class="slide-quiz__input-checkbox">
+                                    <label for="switching9" class="slide-quiz__label-checkbox">
+                                        Забор
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide quiz__slide slide-quiz">
+                            <h3 class="slide-quiz__title">
+                                Из какого материала хотите строить дом?
+                            </h3>
+                            <div class="slide-quiz__row three">
                                 <div class="slide-quiz__item-radio">
-                                    <input type="radio" value="Водоснабжение" id="switching3" name="switching" class="slide-quiz__input-radio">
-                                    <label for="switching3" class="slide-quiz__label-radio">
-                                        Водоснабжение
+                                    <input type="radio" checked="checked" value="Дерево" id="material1" name="material" class="slide-quiz__input-radio">
+                                    <label for="material1" class="slide-quiz__label-radio">
+                                        Дерево
                                     </label>
                                 </div>
                                 <div class="slide-quiz__item-radio">
-                                    <input type="radio" value="Септик" id="switching4" name="switching" class="slide-quiz__input-radio">
-                                    <label for="switching4" class="slide-quiz__label-radio">
-                                        Септик
+                                    <input type="radio" value="Газобетон" id="material2" name="material" class="slide-quiz__input-radio">
+                                    <label for="material2" class="slide-quiz__label-radio">
+                                        Газобетон
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Керамический блок" id="material3" name="material" class="slide-quiz__input-radio">
+                                    <label for="material3" class="slide-quiz__label-radio">
+                                        Керамический блок
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Монолит" id="material4" name="material" class="slide-quiz__input-radio">
+                                    <label for="material4" class="slide-quiz__label-radio">
+                                        Монолит
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Кирпич" id="material5" name="material" class="slide-quiz__input-radio">
+                                    <label for="material5" class="slide-quiz__label-radio">
+                                        Кирпич
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide quiz__slide slide-quiz">
+                            <h3 class="slide-quiz__title">
+                                Какой тип кровли вы хотите?
+                            </h3>
+                            <div class="slide-quiz__row three">
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" checked="checked" value="Прямая" id="roof1" name="roof" class="slide-quiz__input-radio">
+                                    <label for="roof1" class="slide-quiz__label-radio">
+                                        Прямая
+                                    </label>
+                                </div>
+                                <div class="slide-quiz__item-radio">
+                                    <input type="radio" value="Скатная" id="roof2" name="roof" class="slide-quiz__input-radio">
+                                    <label for="roof2" class="slide-quiz__label-radio">
+                                        Скатная
                                     </label>
                                 </div>
                             </div>
@@ -523,7 +611,7 @@
                     <div class="quiz__bottom">
                         <div class="quiz__pagin-row">
                             <p class="quiz__pagin-text">
-                                Вопрос: <span>1</span> из 7
+                                Вопрос: <span>1</span> из 9
                             </p>
                             <div class="swiper-pagination quiz__pagination">
     
@@ -539,7 +627,6 @@
                         </div>
                     </div>
                 </div>
-                
             </form>
         </div>
     </div>
@@ -803,10 +890,10 @@
       </div>
       <nav class="footer__menu">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+          <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+          <li class="menu__item"><a href="#works" class="menu__link">Портфолио</a></li>
+          <li class="menu__item"><a href="#company" class="menu__link">О компании</a></li>
+          <li class="menu__item"><a href="#consultation" class="menu__link">Контакты</a></li>
         </ul>
       </nav>
       <div class="footer__contacts">
@@ -831,7 +918,7 @@
         © 2024 green-living.ru
       </p>
       <p class="footer__info">
-        <a href="#">Правовая информация</a> и <a href="#">политика обработки персональных данных</a>
+        <a target="_blank" href="static/politics.pdf">Политика обработки персональных данных</a>
       </p>
     </div>
   </div>
@@ -1518,23 +1605,7 @@
 </div>
 
 
-
-
-<div class="popup popup-video" data-popup="popup-video" data-close-overlay>
-    <div class="popup__wrapper popup-video__wrapper" data-close-overlay>
-        <div class="popup__content popup-video__content">
-            <div class="button-close popup__button-close">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" fill="#F4F2EF"/>
-                </svg>
-            </div>
-            <video id="popup-video" width="100%" height="auto" preload="metadata" controls playsinline loop>
-                <source src="static/video/popup-video.mp4" type="video/mp4">
-            </video>
-        </div>
     </div>
-</div>
-    </div>
-    <script src="js/app.min.js?_v=20240306114604"></script>
+    <script src="js/app.min.js?_v=20240307100912"></script>
   </body>
 </html>

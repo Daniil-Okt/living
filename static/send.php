@@ -12,7 +12,9 @@
    $name = $_POST['name'];
    $switching = $_POST['switching'];
    $planning = $_POST['planning'];
-
+   $material = $_POST['material'];
+   $roof = $_POST['roof'];
+   
    //Отправка в Telegram
   
    $token = "6462770944:AAF2k3UBnGg8Kzs9PQEECuEL28_VUH15nos";
@@ -42,9 +44,16 @@
   if ($switching != '') {
     $message .= "Какие коммуникации планируют сделать сразу: $switching\n";
   }
+  if ($material != '') {
+    $message .= "Из какого материала хотят строить дом: $material\n";
+  }
+  if ($roof != '') {
+    $message .= "Тип кровли: $roof\n";
+  }
   if ($planning != '') {
     $message .= "Когда планируют приступить к строительству: $planning\n";
   }
+  
   
   // Отправка запроса в Телеграм
   $url = "https://api.telegram.org/bot$token/sendMessage";
